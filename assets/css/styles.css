@@ -1,0 +1,122 @@
+body {
+  background-color: #f5f5f5 !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+.index-login {
+  padding: 50px 0;
+}
+
+.index-login-login {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para a cor primária */
+.primary-color {
+  color: #00B8FF;
+}
+
+
+.border-none{
+  border-radius: 0;
+  border: 0;
+}
+
+
+.form-header-border{
+  background-color: #00B8FF;
+  color:white;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+/* Estilo para a cor de fundo primária */
+.primary-bg {
+  background-color: #00B8FF;
+}
+
+/* Estilos para as cores secundárias */
+.secondary-color-1 {
+  color: #005266;
+}
+
+.secondary-color-2 {
+  color: #41B3A3;
+}
+
+.secondary-color-3 {
+  color: #FF8C00;
+}
+
+.secondary-color-4 {
+  color: #FF3D00;
+}
+
+/* Estilos para as cores de fundo secundárias */
+.secondary-bg-1 {
+  background-color: #005266;
+}
+
+.secondary-bg-2 {
+  background-color: #41B3A3;
+}
+
+.secondary-bg-3 {
+  background-color: #FF8C00;
+}
+
+.secondary-bg-4 {
+  background-color: #FF3D00;
+}
+
+.text-white{
+  color: white;
+}
+
+.footer{
+  margin-top: 20px !important;
+}
+
+/* Bordas estilizadas */
+
+.border-bottom-custom-primarycolor {
+  border-bottom: 2px solid #00B8FF; /* Substitua #000 pela cor desejada */
+
+}
+
+/* estilização da tabela */
+
+.table {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Valor pode ser ajustado conforme necessário */
+    overflow: hidden; /* Garante que o conteúdo dentro da tabela não ultrapasse as bordas arredondadas */
+}
+
+
+.table thead th {
+  background-color: #007bff; /* Cor do cabeçalho */
+  color: #ffffff; /* Cor do texto no cabeçalho */
+  border-color: #007bff; /* Cor da borda */
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Cor de fundo para linhas pares */
+}
+
+.btn-primary,
+.btn-danger {
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+.table tbody .d-flex.justify-content-center {
+  text-align: center;
+}

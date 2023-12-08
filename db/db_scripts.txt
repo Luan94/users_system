@@ -1,0 +1,35 @@
+SCRIPT PARA GERAÇÃO DA TABELA users
+
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `birth_date` date NOT NULL,
+  `CPF` varchar(50) NOT NULL,
+  `RG` varchar(50) NOT NULL,
+  `phone` varchar(50) NOT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `deleted_at` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_index` (`username`),
+  UNIQUE KEY `CPF_index` (`CPF`),
+  UNIQUE KEY `RG INDEX` (`RG`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+
+
+SCRIPT PARA GERAÇÃO DA TABELA users_addresses
+
+CREATE TABLE `users_addresses` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `address` varchar(255) NOT NULL,
+  `CEP` varchar(10) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `CEP_unique` (`CEP`),
+  KEY `user_owns_address` (`user_id`),
+  CONSTRAINT `user_owns_address` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_cI
