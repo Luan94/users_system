@@ -1,12 +1,12 @@
 Este projeto foi criado utilizando o padrão de projeto de software MVC com php e javascript(para o jquery e algumas outras funcionalidades) utilizando MySQL como banco de dados
 
-Para a criação do servidor da aplicação utilizei o XAMPP XAMPP Version: 8.2.12 e o seu php na versão 8.2.12
+Para a criação do servidor da aplicação utilizei o XAMPP Version: 8.2.12 e o seu php na versão 8.2.12
 você pode baixar o xampp através deste site:
 https://www.apachefriends.org/pt_br/index.html
 
 COMO EXECUTAR A APLICAÇÃO
 
-1- Crie uma pasta para o projeto e insira os arquivos deste repositório na pasta que foi criada 
+1- Crie uma nova pasta para o projeto no diretório htdocs da pasta onde está instalado seu XAMPP (exemplo: C:\xampp\htdocs\nova pasta criada)e insira os arquivos deste repositório na pasta que foi criada 
 
 2- Para a criação do banco de dados para utilizar neste projeto vá até a pasta "db" nela há um arquivo que poderá ser importado para a criação do database que será utilizado no projeto OU crie um novo database e rode os scripts de geração do banco de dados
 um para a tabela "users" e outro para a tabela "users_addresses"
