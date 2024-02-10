@@ -1,8 +1,8 @@
 <?php
 
-include "../config/connection.php";
+include "../connection.php";
 
-class Login extends connection {
+class Login extends Connection {
 
 
     //Método para login do usuário, faz requisições e comparações no banco de dados para verificar se o Login existe, é Possivel logar por username ou CPF
