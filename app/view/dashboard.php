@@ -7,7 +7,7 @@ if (!isset($_SESSION["id"])) {
     exit();
 }
 
-require_once "../config/connection.php";
+require_once "../connection.php";
 require_once "../model/list_users_model.php";
 require_once "../controller/list_users_controller.php";
 require_once "../model/delete_user_model.php";

@@ -1,6 +1,6 @@
 <?php
 
-require_once "../config/connection.php";
+require_once "../connection.php";
 
 //Cadastra novo endereço de um usuário
 class RegisterAddressModel extends Connection {

@@ -15,8 +15,8 @@ public function __construct($username,$password){
 
 public function LoginUser(){
     if($this->CheckIfEmpty() == false){
-        echo '<script>alert("Existem campos obrigatórios que estão vazios!");</script>';
         header("Location: ../index.php");
+        echo '<script>alert("Existem campos obrigatórios que estão vazios!");</script>';        
         exit();
     }
 

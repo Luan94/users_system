@@ -9,7 +9,7 @@ if (!isset($_SESSION["id"])) {
 
 
 //Arquivos necessários
-require_once "../config/connection.php";
+require_once "../connection.php";
 require_once "../model/edit_user_model.php";
 require_once "../controller/edit_user_controller.php";
 require_once "../controller/list_user_addresses_controller.php";
