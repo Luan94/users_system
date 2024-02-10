@@ -1,22 +1,14 @@
 Este projeto foi criado utilizando o padrão de projeto de software MVC com php e javascript(para o jquery e algumas outras funcionalidades) utilizando MySQL como banco de dados
 
-Para a criação do servidor da aplicação utilizei o XAMPP Version: 8.2.12 e o seu php na versão 8.2.12
-você pode baixar o xampp através deste site:
-https://www.apachefriends.org/pt_br/index.html
 
 COMO EXECUTAR A APLICAÇÃO
 
-1- Crie uma nova pasta para o projeto no diretório htdocs da pasta onde está instalado seu XAMPP (exemplo: C:\xampp\htdocs\nova pasta criada)e insira os arquivos deste repositório na pasta que foi criada 
+-Você precisará do docker instalado em sua máquina para executar o projeto
+-Monte as imagens que estão na pasta app e na pasta db
+-Crie uma network,
+-tenha certeza que o nome do container do database é seja "users_system_db" mas caso você tenha criado com um nome diferente ou deseja trocar troque a string da variável $host em app/connection.php linha 4
+-rode os dois containers dentro desta mesma network
 
-2- Para a criação do banco de dados para utilizar neste projeto vá até a pasta "db" nela há um arquivo que poderá ser importado para a criação do database que será utilizado no projeto OU crie um novo database e rode os scripts de geração do banco de dados
-um para a tabela "users" e outro para a tabela "users_addresses"
-
-3- (OPCIONAL)-Caso seu ambiente esteja configurada de alguma maneira que não seja a padrão do XAMPP, vá até a pasta config e abra o arquivo connection e faça os ajustes necessários para a conexão com seu banco de dados do servidor
-aqui você pode trocar a url, usuário e nome do banco de dados e adicionar quaisquer informação necessária para o funcionamento da conexão com o database
-
-4-Execute o XAMPP E inicia o apache server o MySQL server (os dois primeiros botões de cima para baixo)
-
-5-Para uma conexão local(Padrão) vá Até http://localhost/NOME DA PASTA QUE FOI CRIADA NO PASSO 1/index.php
 
 FEATURES SOLICITADAS QUE FORAM CRIADAS:
 
